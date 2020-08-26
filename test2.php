@@ -4,7 +4,7 @@
 	$sum = 0;
 
 	for ($i=0; $i < count($array); $i++) { 
-		if ($array[$i]>= -pow(2, 30) && $array[$i]<= pow(2, 30)) {
+		if ($array[$i]>= -pow(2, 30) && $array[$i]<= (pow(2, 30)-1)) {
 			$sum_t = $array[$i]*2;
 			for ($j=0; $j < count($array); $j++) { 
 				$sum_val = $array[$i] + $array[$j];
